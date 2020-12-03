@@ -106,7 +106,26 @@
 .information__block {
     max-width: 255px;
     max-height: 148px;
-    padding: 30px 0px 30px 40px;
+    padding: 30px 40px;
     margin: 0px 0px 30px 0px;
     background-color: #2378FC;
+}
+.information__block--application,
+.information__block--plan {
+    max-height: 175px;
+}
+.information__block--route {
+    background-color: #30BCC9;
+}
+.information__block--application {
+    background-color: #FFC41E;
+}
+.information__block--plan {
+    background-color: #F6404F;
+}
+.subtitle {
+    font-size: 21px;
+    line-height: 27px;
+    letter-spacing: -1%;
+    font-weight: 500;
 }
