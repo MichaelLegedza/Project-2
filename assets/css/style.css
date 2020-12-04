@@ -36,6 +36,11 @@
     line-height: 21px;
     color: #fff;
 }
+.link:hover {
+    text-decoration: underline;
+    color: #FFC41E;
+    transition: .1s linear;
+}
 .transition {
     display: block;
     font-size: 16px;
@@ -52,7 +57,9 @@
     font-weight: 500;
     color: #2E373B;
 }
-
+time {
+    display: block;
+}
 /* =========== Header =========== */
 
 .header {
@@ -73,7 +80,7 @@
     color: rgb(255, 255, 255, 0.75);
 }
 .header__navigation-link:hover {
-    color: rgb(196, 159, 159);
+    color: rgb(0, 0, 0);
     text-decoration: underline;
 }
 .header__navigation-link:first-child {
@@ -81,6 +88,12 @@
 }
 .header__search {
     margin-right: 70px;
+}
+.header__search img:hover {
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: .4s linear;
 }
 .header__language:before {
     content: '';
@@ -181,11 +194,7 @@
 .column__menu--link {
     margin-bottom: 15px;
 }
-.column__menu--link:hover {
-    text-decoration: underline;
-    color: #FFC41E;
-    transition: .1s linear;
-}
+
 
 /* =========== Events =========== */
 
@@ -318,3 +327,32 @@
     padding: 60px 0px 70px 0px;
     background-color: #30BCC9;
 }
+.footer__menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.subtitle--footer {
+    margin-bottom: 20px;
+    color: #fff;
+}
+/*  
+.column--company {
+    margin: 0px 166px 40px 0px;
+}
+.column--ekzi,
+.column--people {
+    margin-right: 122px;
+}
+.column--press {
+    margin-right: 141px;
+}
+.column--sponsor {
+    margin-right: 88px;
+}
+.column--app {
+    margin-right: 126px;
+}
+.form__footer {
+    max-width: 255px;
+}
+ */
