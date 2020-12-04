@@ -286,6 +286,9 @@
     display: flex;
     margin-bottom: 30px;
 }
+.news__article:last-child {
+    margin-bottom: 0px;
+}
 .news__article img {
     margin-right: 30px;
 }
@@ -307,4 +310,11 @@
 }
 .news__link:hover {
     text-decoration: underline;
+}
+
+/* =========== Footer =========== */
+
+.footer {
+    padding: 60px 0px 70px 0px;
+    background-color: #30BCC9;
 }
