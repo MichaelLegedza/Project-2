@@ -226,7 +226,7 @@ time {
 }
 .side-menu__column {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .subtitle--menu {
     margin-bottom: 30px;
