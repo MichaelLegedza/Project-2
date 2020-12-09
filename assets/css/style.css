@@ -91,6 +91,10 @@
 time {
     display: block;
 }
+li {
+    list-style: none;
+}
+
 /* =========== Header =========== */
 
 .header {
@@ -103,10 +107,15 @@ time {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 33px 0px;
+    padding: 33px 15px;
+}
+.navigation__list {
+    display: flex;
+}
+.list__item {
+    margin-left: 47px;
 }
 .header__navigation-link {
-    margin-left: 47px;
     color: #fff;
 }
 .header__navigation-link:hover {
@@ -114,7 +123,7 @@ time {
     color: #FFC41E;
     text-decoration: underline;
 }
-.header__navigation-link:first-child {
+.list__item:first-child {
     margin: 0;
 }
 .header__features {
@@ -147,6 +156,66 @@ time {
     transition: .1s linear;
 }
 
+/* =========== Header adaptive =========== */
+
+@media screen and (min-width: 320px) {
+    
+    .header__inner {
+        flex-direction: column;
+    }
+    .header__logo {
+        margin-bottom: 25px;
+    }
+    .header__navigation {
+        margin-bottom: 20px;
+    }
+    .header__navigation-link {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .navigation__list {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .list__item,
+    .list__item:first-child {
+        margin: 20px;
+    }
+}
+@media screen and (min-width: 595px) {
+    .header__navigation-link {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .list__item,
+    .list__item:first-child {
+        margin: 15px;
+    }
+}
+@media screen and (min-width: 850px) {
+    .header__navigation-link {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .list__item{
+        margin-left: 47px;
+    }
+    .list__item:first-child {
+        margin-left: 0px;
+    }
+}
+@media screen and (min-width: 1180px) {
+    .header__inner {
+        flex-direction: row;
+    }
+    .header__logo {
+        margin-bottom: 0px;
+    }
+    .header__navigation {
+        margin-bottom: 0px;
+    }
+}
+/*  
 /* =========== Intro =========== */
 
 .intro {
@@ -216,6 +285,13 @@ time {
 .information__block--plan {
     background-color: #F6404F;
     margin: 0px;
+}
+/* =========== Intro adaptive =========== */
+
+@media screen and (max-width: 715px) {
+    .intro {
+        padding-top: 200px;
+    }
 }
 
 /* =========== Side-menu =========== */
