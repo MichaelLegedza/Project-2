@@ -558,7 +558,7 @@ li {
 }
 @media screen and (min-width: 1040px) {
     .events__development .events__item {
-        margin: 0px 0px 35px 0px;
+        margin: 0px 40px 35px;
         box-shadow: 0px 0px 0px;
         border-radius: 0px;
         padding: 0px;
@@ -570,8 +570,6 @@ li {
     .events__item--chest {
         margin-bottom: 18px;
     }
-}
-@media screen and (min-width: 1040px) {
     .events__main {
         flex-direction: row;
         margin-bottom: 55px;
@@ -582,6 +580,14 @@ li {
     }
     .events__development .transition {
         justify-content: unset;
+    }
+}
+@media screen and (min-width: 1240px) {
+    .events__development .events__item {
+        margin: 0px;
+    }
+    .events__development .events__item:not(:nth-child(3n)) {
+        margin-right: 30px;
     }
 }
 /* =========== News =========== */
