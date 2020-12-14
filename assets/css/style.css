@@ -589,6 +589,9 @@ li {
     .events__development .events__item:not(:nth-child(3n)) {
         margin-right: 30px;
     }
+    .events__development .events__item--chest {
+        margin-bottom: 18px;
+    }
 }
 /* =========== News =========== */
 
@@ -900,6 +903,10 @@ input::placeholder {
     .subtitle--footer {
         font-size: 21px;
         margin-bottom: 20px;
+    }
+    .column,
+    .column:not(:last-child) { 
+        margin-bottom: 0px;
     }
     .column__footer--link {
         margin-bottom: 10px;
